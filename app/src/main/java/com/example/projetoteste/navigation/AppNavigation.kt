@@ -12,11 +12,11 @@ import com.example.projetoteste.screens.WelcomeScreen
 
 @Composable
 fun AppNavigation() {
-    val navController = rememberNavController() // Controlador de navegação
+    val navController = rememberNavController()
 
     NavHost(
         navController = navController,
-        startDestination = Screen.Login.route // Tela inicial
+        startDestination = Screen.Login.route
     ) {
         composable(route = Screen.Login.route) {
             LoginScreen(navController = navController)
